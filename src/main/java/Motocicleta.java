@@ -1,12 +1,12 @@
 public class Motocicleta {
 
-    private int velocidad;
+    private double velocidad;
 
     public Motocicleta(){
         this.velocidad = 65;
     }
 
-    public int getVelocidad() {
+    public double getVelocidad() {
         return this.velocidad;
     }
 

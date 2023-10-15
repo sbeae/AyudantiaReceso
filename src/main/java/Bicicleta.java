@@ -1,11 +1,11 @@
 public class Bicicleta {
 
-    private int velocidad;
+    private double velocidad;
     public Bicicleta(){
         this.velocidad = 10;
     }
 
-    public int getVelocidad() {
+    public double getVelocidad() {
         return this.velocidad;
     }
 
