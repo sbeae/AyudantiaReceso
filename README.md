@@ -22,5 +22,6 @@ Para poder realizar el desafio, las clases se deben relacionar entre si de la si
 ![image](https://github.com/sbeae/Receso/assets/130028710/1a93f3d5-0ba5-4f96-8585-3dd9612c3a71)
 ![image](https://github.com/sbeae/Receso/assets/130028710/630e46b7-4a1c-4400-a76c-a75383d60511)
 
-
+# Cambios realizados en el codigo.
+Al realizar la implementacion del diagrama UML y transformarlo a codigo java, me pudo crear una base para poder llevar a cabo el desafio, los cambios fueron demasiados en comparacion al punto de partida, como por ejemplo el metodo mostrar se tuvo que sacar de Persona y crear una nueva Clase Main para poder realizar ese trabajo.
 
