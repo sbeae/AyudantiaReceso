@@ -1,27 +1,34 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Persona {
 
     private String nombre;
-    private int destino;
+    private double destino;
     public void ingresarNombre() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("nombre: ");
-        nombre = scanner.nextLine();
+        this.nombre = scanner.nextLine();
     }
     public void ingresarDestino(){
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Ingrese el destino en cantidad de kilometros a recorrer: ");
-        destino = scanner.nextInt();
+        try {
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Ingrese el destino en cantidad de kilometros a recorrer: ");
+            this.destino = scanner.nextDouble();
+        }
+        catch (InputMismatchException e) {
+            System.out.println("Error InputMismatchException: El valor no se puede convertir a String");
+        }
+    }
+    public String getNombre() {
+        return this.nombre;
+    }
+    public double getDestino() {
+        return this.destino;
     }
 
 
-    public void mostrar() {
-        ingresarNombre();
-        ingresarDestino();
-        ingresarVehiculo();
-        System.out.println("Hola " + nombre + ", el tiempo de viaje aproximado para llegar a " + destino + " en " + vehículo + " es de: " + cantidad + " Minutos/Horas");
-    }
+
 
 
 }
