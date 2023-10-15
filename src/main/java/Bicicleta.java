@@ -6,7 +6,14 @@ public class Bicicleta {
     }
 
     public double getVelocidad() {
-        return this.velocidad;
+
+        try {
+            return this.velocidad;
+        }
+        catch (NumberFormatException e) {
+            System.out.println("Error NumberFormatException: El valor no se puede convertir a double");
+            return 0;
+        }
     }
 
 }
